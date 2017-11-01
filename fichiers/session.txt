@@ -1,0 +1,48 @@
+session_abort — Abandonne les changements sur le tableau de session et termine la session
+session_cache_expire — Retourne la configuration actuelle du délai d'expiration du cache
+session_cache_limiter — Lit et/ou modifie le limiteur de cache de session
+session_commit — Alias de session_write_close
+session_create_id — Create new session id
+session_decode — Décode les données encodées de session
+session_destroy — Détruit une session
+session_encode — Encode les données de session
+session_gc — Perform session data garbage collection
+session_get_cookie_params — Lit la configuration du cookie de session
+session_id — Lit et/ou modifie l'identifiant courant de session
+session_is_registered — Vérifie si une variable est enregistrée dans la session
+session_module_name — Lit et/ou modifie le module de session courant
+session_name — Lit et/ou modifie le nom de la session
+session_regenerate_id — Remplace l'identifiant de session courant par un nouveau
+session_register_shutdown — Fonction de fermeture de session
+session_register — Enregistre une variable globale dans une session
+session_reset — Réinitialise le tableau de session avec les valeurs originales
+session_save_path — Lit et/ou modifie le chemin de sauvegarde des sessions
+session_set_cookie_params — Modifie les paramètres du cookie de session
+session_set_save_handler — Configure les fonctions de stockage de sessions
+session_start — Démarre une nouvelle session ou reprend une session existante
+session_status — Détermine le statut de la session courante
+session_unregister — Supprime une variable de la session
+session_unset — Détruit toutes les variables d'une session
+session_write_close — Écrit les données de session et ferme la session
+
+
+
+
+SessionHandler — La classe SessionHandler
+SessionHandler::close — Ferme la session
+SessionHandler::create_sid — Retourne un nouvel ID de session
+SessionHandler::destroy — Détruit une session
+SessionHandler::gc — Nettoie les anciennes sessions
+SessionHandler::open — Initialise une session
+SessionHandler::read — Lit les données de session
+SessionHandler::write — Ecrit des données dans la session
+
+
+
+SessionHandlerInterface — L'interface SessionHandlerInterface
+SessionHandlerInterface::close — Ferme la session
+SessionHandlerInterface::destroy — Détruit une session
+SessionHandlerInterface::gc — Nettoie les vieilles sessions
+SessionHandlerInterface::open — Initialise la session
+SessionHandlerInterface::read — Lit les données de session
+SessionHandlerInterface::write — Ecrit les données de session
